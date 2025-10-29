@@ -754,13 +754,13 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 ---
 
 ## 🙌 Credits
-
 <div align="center">
-  <p>
+  <sub>
     Original project idea and implementation by <strong>Ajay Kumar Yegireddi</strong>.<br>
     Later recreated and shared by <strong>Nasiullah Chaudhari (N4si)</strong></a>.<br>
     Further improvements, updates, and documentation by <strong>Rajashekhar Reddy</strong>.
-  </p>
+  </sub>
 </div>
 
 ---
+
