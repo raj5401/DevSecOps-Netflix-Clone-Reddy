@@ -352,6 +352,10 @@ pipeline{
     }
 }
 
+<div align="center">
+  <img src="./public/assets/dockerhub_repo.png" alt="Docker Hub Repository Screenshot" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
+  <p align="center">Docker Hub Repository</p>
+</div>
 
 
 ```
