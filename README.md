@@ -344,21 +344,19 @@ pipeline{
                 sh "trivy image rajdocker5401/netflix:latest > trivyimage.txt" 
             }
         }
-        stage('Deploy to container'){
+         stage('Deploy to container'){
             steps{
                 sh 'docker run -d --name netflix -p 8081:80 rajdocker5401/netflix:latest'
             }
         }
     }
 }
+```
 
 <div align="center">
   <img src="./public/assets/dockerhub_repo.png" alt="Docker Hub Repository Screenshot" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
   <p align="center">Docker Hub Repository</p>
 </div>
-
-
-```
 
 **Phase 4: Monitoring**
 
