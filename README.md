@@ -354,8 +354,13 @@ pipeline{
 ```
 
 <div align="center">
+  <img src="./public/assets/jenkins-pipeline.png" alt="Jenkins Build Pipeline Screenshot" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
+  <p align="center"><b>✅ Jenkins Pipeline:</b> The build process executed successfully, completing all stages without errors.</p>
+</div>
+
+<div align="center">
   <img src="./public/assets/dockerhub_repo.png" alt="Docker Hub Repository Screenshot" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
-  <p align="center">Docker Hub Repository</p>
+  <p align="center"><b>📦 Docker Hub:</b> The final image has been pushed successfully to the Docker Hub repository.</p>
 </div>
 
 **Phase 4: Monitoring**
