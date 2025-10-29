@@ -21,7 +21,18 @@
 **Step 1: Launch EC2 (Ubuntu 22.04):**
 
 - Provision an EC2 instance on AWS with Ubuntu 22.04.
-- Connect to the instance using SSH.
+- Instance Type: t2.large
+- Storage: 25 GB EBS volume
+- Networking: Associate an Elastic IP
+
+- Security Groups: Allow inbound traffic on the following ports:
+  - ssh ->22
+  - HTTPS ->80
+  - HTTP ->443
+  - 8081 → Application Port (Netflix Clone frontend)
+  - 8080 → Jenkins Dashboard
+  - 9000 → SonarQube Dashboard
+
 
 **Step 2: Clone the Code:**
 
