@@ -749,3 +749,18 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 
 4. **Access your Application**
    - To Access the app make sure port 30007 is open in your security group and then open a new tab paste your NodeIP:30007, your app should be running.
+
+
+---
+
+## 🙌 Credits
+
+<div align="center">
+  <p>
+    Original project idea and implementation by <strong>Ajay Kumar Yegireddi</strong>.<br>
+    Later recreated and shared by <strong>Nasiullah Chaudhari (N4si)</strong></a>.<br>
+    Further improvements, updates, and documentation by <strong>Rajashekhar Reddy</strong>.
+  </p>
+</div>
+
+---
