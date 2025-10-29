@@ -7,7 +7,7 @@
   </a>
 </div>
 
-<br />
+ <br><br> 
 
 <div align="center">
   <img src="./public/assets/netflix-home-page.jpg" alt="Logo" width="100%" height="100%">
@@ -360,7 +360,6 @@ pipeline{
 
 <br><br> 
 
-
 <div align="center">
   <img src="./public/assets/dockerhub_repo.png" alt="Docker Hub Repository Screenshot" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
   <p align="center"><b>📦 Docker Hub:</b> The final image has been pushed successfully to the Docker Hub repository.</p>
@@ -671,16 +670,16 @@ To make it easier to view metrics, you can import a pre-configured dashboard. Fo
 
 You should now have a Grafana dashboard set up to visualize metrics from Prometheus.
 
-That's it! You've successfully installed and set up Grafana to work with Prometheus for monitoring and visualization.
+<br><br>
+
+<div align="center">
+  <img src="./public/assets/node-exporter-metric-1.png" alt="Grafana Node Exporter Dashboard" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
+  <p align="center"><b>📊 Grafana Monitoring:</b> Node Exporter data source integrated with Prometheus to visualize system metrics and container performance.</p>
+</div>
 
 2. **Configure Prometheus Plugin Integration:**
     - Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
 
-
-**Phase 5: Notification**
-
-1. **Implement Notification Services:**
-    - Set up email notifications in Jenkins or other notification mechanisms.
 
 # Phase 6: Kubernetes
 
