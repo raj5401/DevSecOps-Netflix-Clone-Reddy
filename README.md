@@ -14,7 +14,7 @@
   <p align="center">Home Page</p>
 </div>
 
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
+# CI/CD Pipeline for Netflix Clone (Jenkins + AWS)
 
 ### **Phase 1: Initial Setup and Deployment**
 
