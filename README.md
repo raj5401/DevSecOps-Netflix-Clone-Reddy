@@ -358,6 +358,9 @@ pipeline{
   <p align="center"><b>✅ Jenkins Pipeline:</b> The build process executed successfully, completing all stages without errors.</p>
 </div>
 
+<br><br> 
+
+
 <div align="center">
   <img src="./public/assets/dockerhub_repo.png" alt="Docker Hub Repository Screenshot" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
   <p align="center"><b>📦 Docker Hub:</b> The final image has been pushed successfully to the Docker Hub repository.</p>
