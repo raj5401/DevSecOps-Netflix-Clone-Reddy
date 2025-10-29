@@ -151,17 +151,14 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         
 2. **Install Necessary Plugins in Jenkins:**
 
-Goto Manage Jenkins →Plugins → Available Plugins →
+    Goto Manage Jenkins →Plugins → Available Plugins →
 
-Install below plugins
+    Install below plugins
 
-1 Eclipse Temurin Installer (Install without restart)
-
-2 SonarQube Scanner (Install without restart)
-
-3 NodeJs Plugin (Install Without restart)
-
-4 Email Extension Plugin
+    1 Eclipse Temurin Installer (Install without restart)
+    2 SonarQube Scanner (Install without restart)
+    3 NodeJs Plugin (Install Without restart)
+    4 Email Extension Plugin
 
 ### **Configure Java and Nodejs in Global Tool Configuration**
 
@@ -207,7 +204,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/raj5401/DevSecOps-Netflix-Clone-Reddy.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -276,7 +273,7 @@ Certainly, here are the instructions without step numbers:
   - Enter your DockerHub credentials (Username and Password) and give the credentials an ID (e.g., "docker").
   - Click "OK" to save your DockerHub credentials.
 
-Now, you have installed the Dependency-Check plugin, configured the tool, and added Docker-related plugins along with your DockerHub credentials in Jenkins. You can now proceed with configuring your Jenkins pipeline to include these tools and credentials in your CI/CD process.
+Now, you have installed the Dependency-Check plugin, You can now proceed with configuring your Jenkins pipeline to include these tools and credentials in your CI/CD process.
 
 ```groovy
 
@@ -297,7 +294,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/raj5401/DevSecOps-Netflix-Clone-Reddy.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -336,31 +333,25 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build --build-arg TMDB_V3_API_KEY=<yourapikey> -t netflix ."
-                       sh "docker tag netflix nasi101/netflix:latest "
-                       sh "docker push nasi101/netflix:latest "
+                       sh "docker tag netflix rajdocker5401/netflix:latest "
+                       sh "docker push rajdocker5401/netflix:latest "
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image nasi101/netflix:latest > trivyimage.txt" 
+                sh "trivy image rajdocker5401/netflix:latest > trivyimage.txt" 
             }
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name netflix -p 8081:80 nasi101/netflix:latest'
+                sh 'docker run -d --name netflix -p 8081:80 rajdocker5401/netflix:latest'
             }
         }
     }
 }
 
-
-If you get docker login failed errorr
-
-sudo su
-sudo usermod -aG docker jenkins
-sudo systemctl restart jenkins
 
 
 ```
@@ -368,8 +359,6 @@ sudo systemctl restart jenkins
 **Phase 4: Monitoring**
 
 1. **Install Prometheus and Grafana:**
-
-   Set up Prometheus and Grafana to monitor your application.
 
    **Installing Prometheus:**
 
@@ -672,8 +661,6 @@ To make it easier to view metrics, you can import a pre-configured dashboard. Fo
 
 You should now have a Grafana dashboard set up to visualize metrics from Prometheus.
 
-Grafana is a powerful tool for creating visualizations and dashboards, and you can further customize it to suit your specific monitoring needs.
-
 That's it! You've successfully installed and set up Grafana to work with Prometheus for monitoring and visualization.
 
 2. **Configure Prometheus Plugin Integration:**
@@ -754,8 +741,3 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 
 4. **Access your Application**
    - To Access the app make sure port 30007 is open in your security group and then open a new tab paste your NodeIP:30007, your app should be running.
-
-**Phase 7: Cleanup**
-
-1. **Cleanup AWS EC2 Instances:**
-    - Terminate AWS EC2 instances that are no longer needed.
