@@ -670,8 +670,7 @@ To make it easier to view metrics, you can import a pre-configured dashboard. Fo
 
 You should now have a Grafana dashboard set up to visualize metrics from Prometheus.
 
-<br><br>
-
+<br>
 <div align="center">
   <img src="./public/assets/node-exporter-metric-1.png" alt="Grafana Node Exporter Dashboard" width="700" style="border-radius:10px; box-shadow:0px 0px 8px #888;">
   <p align="center"><b>📊 Grafana Monitoring:</b> Node Exporter data source integrated with Prometheus to visualize system metrics and container performance.</p>
